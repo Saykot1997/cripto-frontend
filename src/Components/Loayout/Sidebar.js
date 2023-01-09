@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from "../../Photos/logo.png"
+import Logo from "../../Photos/logo.jpg"
 import menuLogo from "../../Photos/menu.png"
 import assetsLogo from "../../Photos/assets.png"
 import payLogo from "../../Photos/pay.png"
@@ -11,10 +11,10 @@ export default function Sidebar() {
     return (
         <div className='w-[250px] min-h-screen py-7 px-7'>
             <div className=' flex gap-3 items-center'>
-                <div className=' w-12 rounded-full overflow-hidden'>
+                <div className=' w-10 h-10 rounded-full overflow-hidden'>
                     <img src={Logo} alt="logo" className=' h-full w-full object-cover' />
                 </div>
-                <p className=' font-bold text-lg'>GIC Ltd.</p>
+                <p className=' font-bold text-lg'>Ofspace LLC</p>
             </div>
             <div className=' mt-5'>
                 <div className=' flex gap-3 items-center cursor-pointer hover:bg-white transition-all duration-200 ease-linear hover:shadow-md shadow-gray-400 text-gray-500 hover:font-semibold hover:text-black py-3 px-4 rounded-lg mb-3'>

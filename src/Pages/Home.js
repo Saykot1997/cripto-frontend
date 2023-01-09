@@ -6,6 +6,7 @@ import { TbMessage2 } from "react-icons/tb"
 import TableComponent from '../Components/Home/TableComponent'
 import { IoLogInOutline } from "react-icons/io5"
 import { IoIosArrowDown } from "react-icons/io"
+import { MdOutlineKeyboardArrowRight } from "react-icons/md"
 import ChartComponent from '../Components/Home/ChartComponent'
 
 
@@ -81,6 +82,93 @@ export default function Home() {
                         </div>
                     </div>
                     <ChartComponent />
+                    <div className=' mt-5'>
+                        <p className=' text-lg font-semibold'>New on Coinbase</p>
+                        <div className=' flex justify-between items-center border-b py-3'>
+                            <div className=' flex gap-3 items-center'>
+                                <div className=' w-10 h-10 flex justify-center items-center rounded-full bg-[#64CBF4]'>
+                                    <AiFillFolder className=' text-white w-8 ' />
+                                </div>
+                                <div>
+                                    <p className=' font-semibold'>PolySwarm</p>
+                                    <p className=' text-gray-500 text-sm'>Added 2 days ago</p>
+                                </div>
+                            </div>
+                            <div>
+                                <MdOutlineKeyboardArrowRight className=' text-2xl' />
+                            </div>
+                        </div>
+                        <div className=' flex justify-between items-center border-b py-3'>
+                            <div className=' flex gap-3 items-center'>
+                                <div className=' w-10 h-10 flex justify-center items-center rounded-full bg-[#64CBF4]'>
+                                    <AiFillFolder className=' text-white w-8 ' />
+                                </div>
+                                <div>
+                                    <p className=' font-semibold'>PolySwarm</p>
+                                    <p className=' text-gray-500 text-sm'>Added 2 days ago</p>
+                                </div>
+                            </div>
+                            <div>
+                                <MdOutlineKeyboardArrowRight className=' text-2xl' />
+                            </div>
+                        </div>
+                        <div className=' flex justify-between items-center border-b py-3'>
+                            <div className=' flex gap-3 items-center'>
+                                <div className=' w-10 h-10 flex justify-center items-center rounded-full bg-[#64CBF4]'>
+                                    <AiFillFolder className=' text-white w-8 ' />
+                                </div>
+                                <div>
+                                    <p className=' font-semibold'>PolySwarm</p>
+                                    <p className=' text-gray-500 text-sm'>Added 2 days ago</p>
+                                </div>
+                            </div>
+                            <div>
+                                <MdOutlineKeyboardArrowRight className=' text-2xl' />
+                            </div>
+                        </div>
+                        <div className=' flex justify-between items-center border-b py-3'>
+                            <div className=' flex gap-3 items-center'>
+                                <div className=' w-10 h-10 flex justify-center items-center rounded-full bg-[#64CBF4]'>
+                                    <AiFillFolder className=' text-white w-8 ' />
+                                </div>
+                                <div>
+                                    <p className=' font-semibold'>PolySwarm</p>
+                                    <p className=' text-gray-500 text-sm'>Added 2 days ago</p>
+                                </div>
+                            </div>
+                            <div>
+                                <MdOutlineKeyboardArrowRight className=' text-2xl' />
+                            </div>
+                        </div>
+                        <div className=' flex justify-between items-center border-b py-3'>
+                            <div className=' flex gap-3 items-center'>
+                                <div className=' w-10 h-10 flex justify-center items-center rounded-full bg-[#64CBF4]'>
+                                    <AiFillFolder className=' text-white w-8 ' />
+                                </div>
+                                <div>
+                                    <p className=' font-semibold'>PolySwarm</p>
+                                    <p className=' text-gray-500 text-sm'>Added 2 days ago</p>
+                                </div>
+                            </div>
+                            <div>
+                                <MdOutlineKeyboardArrowRight className=' text-2xl' />
+                            </div>
+                        </div>
+                        <div className=' flex justify-between items-center border-b py-3'>
+                            <div className=' flex gap-3 items-center'>
+                                <div className=' w-10 h-10 flex justify-center items-center rounded-full bg-[#64CBF4]'>
+                                    <AiFillFolder className=' text-white w-8 ' />
+                                </div>
+                                <div>
+                                    <p className=' font-semibold'>PolySwarm</p>
+                                    <p className=' text-gray-500 text-sm'>Added 2 days ago</p>
+                                </div>
+                            </div>
+                            <div>
+                                <MdOutlineKeyboardArrowRight className=' text-2xl' />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,20 +1,19 @@
 
-// import { BrowserRouter, Routes, Route, } from "react-router-dom";
-import Laout from "./Components/Loayout/Loayout";
+import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import Home from "./Pages/Home";
+import Login from "./Pages/Login"
+import PrivateRoute from "./Components/Loayout/PrivateRoute"
+import Register from "./Pages/Register";
 
 function App() {
   return (
-    <>
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-      </BrowserRouter> */}
-      <Laout>
-        <Home />
-      </Laout>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

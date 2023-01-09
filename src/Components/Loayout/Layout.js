@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 
-function Laout({ children }) {
+function Layout({ children }) {
 
     return (
         <div className=' bg-gray-100 min-h-screen w-full'>
@@ -17,4 +17,4 @@ function Laout({ children }) {
     )
 }
 
-export default Laout
+export default Layout
