@@ -27,31 +27,26 @@ export default function Navbar() {
         navigation("/login")
     }
     return (
-        <div className=' w-full flex justify-between relative'>
-            <div className=' relative w-1/4'>
-                <img src={searchIcon} alt="" className=' absolute top-1/2 left-2 -translate-y-3 w-4' />
-                <input type="text" placeholder='Search' className=' bg-gray-100 rounded-lg pl-8 px-3 py-2 focus:outline-none text-sm focus:text-sm placeholder:text-sm w-full' />
-            </div>
-            <div className=' flex gap-3 items-center' >
-                <div className=' w-12 h-12 flex items-center justify-center bg-white p-1 rounded-full shadow-md shadow-gray-300 cursor-pointer'>
-                    <img src={notificationIcons} alt="notification" className='w-5' />
-                </div>
-                <div className=' flex items-center gap-1' onClick={toggleDropdown}>
-                    <div className=' w-12 h-12 flex items-center justify-center p-1 rounded-full cursor-pointer'>
-                        <img src={clientIcon} alt="client" className=' w-full rounded-full' />
-                    </div>
-                    <img src={downarrowIcon} alt="" className=' w-3' />
+        <div className=' w-full pl-[250px] fixed top-0 left-0 z-10'>
+            <div className=' w-full px-10 py-2  flex justify-end bg-white items-center'>
+                <div className='' >
+                    <div className='flex items-center gap-1' onClick={toggleDropdown}>
+                        <div className=' w-12 h-12 flex items-center justify-center p-1 rounded-full cursor-pointer'>
+                            <img src={clientIcon} alt="client" className=' w-full rounded-full' />
+                        </div>
+                        <img src={downarrowIcon} alt="" className=' w-3' />
 
-                    {
-                        isDropdownOpen ?
-                            <div id='container' className=' p-3 bg-white absolute top-16 right-2 shadow shadow-gray-200 rounded cursor-pointer'>
-                                <span onClick={LogoutFunc} className=' flex items-center px-5 py-1 hover:bg-black hover:bg-opacity-10 rounded'>
-                                    <p className=' text-red-400'>Logout</p>
-                                </span>
-                            </div>
-                            :
-                            null
-                    }
+                        {
+                            isDropdownOpen ?
+                                <div id='container' className=' p-3 bg-white absolute top-16 right-2 shadow shadow-gray-200 rounded cursor-pointer'>
+                                    <span onClick={LogoutFunc} className=' flex items-center px-5 py-1 hover:bg-black hover:bg-opacity-10 rounded'>
+                                        <p className=' text-red-400'>Logout</p>
+                                    </span>
+                                </div>
+                                :
+                                null
+                        }
+                    </div>
                 </div>
             </div>
         </div>

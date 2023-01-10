@@ -4,12 +4,14 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Login"
 import PrivateRoute from "./Components/Loayout/PrivateRoute"
 import Register from "./Pages/Register";
+import Details from "./Pages/Details";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
+        <Route path="/single/:id" element={<PrivateRoute><Details /></PrivateRoute>} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>

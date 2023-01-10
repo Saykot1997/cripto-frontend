@@ -8,7 +8,7 @@ function Layout({ children }) {
         <div className=' bg-gray-100 min-h-screen w-full'>
             <div className=' w-full flex'>
                 <Sidebar />
-                <div className=' bg-gray-50 min-h-screen w-[calc(100%-250px)] overflow-hidden py-7 px-10'>
+                <div className=' bg-gray-50 min-h-screen w-full pl-[270px] overflow-hidden pt-16 pb-5  px-10'>
                     <Navbar />
                     {children}
                 </div>

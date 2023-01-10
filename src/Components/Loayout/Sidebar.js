@@ -9,7 +9,7 @@ import settingsLogo from "../../Photos/settings.png"
 
 export default function Sidebar() {
     return (
-        <div className='w-[250px] min-h-screen py-7 px-7'>
+        <div className='w-[250px] min-h-screen py-3 px-7 fixed top-0 left-0 bg-gray-100 z-10'>
             <div className=' flex gap-3 items-center'>
                 <div className=' w-10 h-10 rounded-full overflow-hidden'>
                     <img src={Logo} alt="logo" className=' h-full w-full object-cover' />

@@ -7,6 +7,8 @@ import criptoInfo2 from "../Photos/criptoInfo (2).png"
 import clientPhoto from "../Photos/client.jpg"
 import { Host } from "../Data";
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Login() {
@@ -24,7 +26,7 @@ function Login() {
         e.preventDefault();
 
         if (!email || !password) {
-            return alert('Please fill all the fields');
+            return toast.error('Please fill all the fields');
         } else {
             try {
                 const loginData = {
@@ -33,8 +35,10 @@ function Login() {
                 }
                 const res = await axios.post(`${Host}/api/investors/login`, loginData)
                 localStorage.setItem("user", JSON.stringify(res.data.token))
+                toast.success(res.data.message)
                 navigation("/")
             } catch (error) {
+                toast.error(error.response.data.error);
                 console.log(error)
             }
         }
@@ -110,6 +114,15 @@ function Login() {
                     </div>
                 </div>
             </div>
+            <ToastContainer
+                position="top-right"
+                autoClose={2000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                className="w-72"
+            />
         </div>
     )
 }
