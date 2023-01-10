@@ -63,7 +63,7 @@ export default function TableComponent({ criptoInfo }) {
 
 
     return (
-        <div className=' w-full mt-5'>
+        <div className=' min-w-[400px] overflow-x-scroll w-full mt-5'>
             <div className=' w-full relative mb-3'>
                 <img src={searchIcon} alt="" className=' absolute top-1/2 left-2 -translate-y-2 w-4' />
                 <input value={search} onChange={(e) => setSearch(e.target.value)} type="text" placeholder='Search by symbol' className=' bg-gray-100 rounded-lg pl-8 px-3 py-3 focus:outline-none text-sm focus:text-sm placeholder:text-sm w-full' />
@@ -112,10 +112,10 @@ export default function TableComponent({ criptoInfo }) {
                 <ReactPaginate
                     previousLabel={"<"}
                     nextLabel={">"}
-                    nextClassName="hover:bg-gray-200 rounded-full h-7 w-7 flex justify-center hover:font-bold items-center"
-                    nextLinkClassName='text-gray-600 font-semi-bold'
-                    previousClassName='hover:bg-gray-200 rounded-full h-7 w-7 flex justify-center hover:font-bold items-center'
-                    previousLinkClassName='text-gray-600 font-semi-bold'
+                    nextClassName="hover:bg-gray-200 hover:border border-gray-900  rounded-full h-7 w-7 flex justify-center hover:font-bold items-center bg-[#6C5DD3]"
+                    nextLinkClassName='text-gray-100 font-semi-bold hover:text-[#6C5DD3] hover:font-bold'
+                    previousClassName='hover:bg-gray-200 hover:border border-gray-900  rounded-full h-7 w-7 flex justify-center hover:font-bold items-center bg-[#6C5DD3]'
+                    previousLinkClassName='text-gray-100 font-semi-bold hover:text-[#6C5DD3] hover:font-bold'
                     breakLabel="..."
                     onPageChange={handlePageClick}
                     pageRangeDisplayed={3}

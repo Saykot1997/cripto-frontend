@@ -27,15 +27,14 @@ export default function Navbar() {
         navigation("/login")
     }
     return (
-        <div className=' w-full pl-[250px] fixed top-0 left-0 z-10'>
-            <div className=' w-full px-10 py-2  flex justify-end bg-white items-center'>
+        <div className=' w-full pl-[80px] md:pl-[250px] fixed top-0 left-0 z-10'>
+            <div className=' w-full px-2 md:px-10 py-2 flex justify-end bg-white items-center'>
                 <div className='' >
                     <div className='flex items-center gap-1' onClick={toggleDropdown}>
                         <div className=' w-12 h-12 flex items-center justify-center p-1 rounded-full cursor-pointer'>
                             <img src={clientIcon} alt="client" className=' w-full rounded-full' />
                         </div>
                         <img src={downarrowIcon} alt="" className=' w-3' />
-
                         {
                             isDropdownOpen ?
                                 <div id='container' className=' p-3 bg-white absolute top-16 right-2 shadow shadow-gray-200 rounded cursor-pointer'>
